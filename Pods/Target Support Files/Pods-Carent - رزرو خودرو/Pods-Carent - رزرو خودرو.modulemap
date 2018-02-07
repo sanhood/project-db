@@ -1,0 +1,6 @@
+framework module Pods_Carent_____________ {
+  umbrella header "Pods-Carent - رزرو خودرو-umbrella.h"
+
+  export *
+  module * { export * }
+}

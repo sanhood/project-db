@@ -1,0 +1,998 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004673D7034078CC6992190D7CBA9F27 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = AA026B998293DDE808A8283181C9727C /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05042C714F1185322B56D259E56EDDB0 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F10F8BC7269E787426E104684ECC7A /* FTS4.swift */; };
+		0713F9193C31DF2A434D5B26BC94DBCF /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C7C94FBF9B18A399DA6A3228C8BAD9 /* AggregateFunctions.swift */; };
+		09D013631BB95BB1D374099FDFF56B75 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF85690FD668A0A569887BC2F0D6260 /* FTS5.swift */; };
+		268B4EED8B7290FB591B356E76807C15 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC9A3F2ED29BD8E891102EE68E8E72 /* Operators.swift */; };
+		2C4F39648842BFFFE52180847A3A6C05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		31B5A121CE63FB5DB224323A509BA215 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B9D58700096442BDDB7788160C3275 /* SlideMenuController.swift */; };
+		322A19757D4796413B2B9775C1796BD6 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E97A2F055C42A1389556231E804CF0 /* Query.swift */; };
+		37BB8E73A5BB6A1497524F9230798023 /* Pods-Carent - رزرو خودرو-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAA258A075B299FEA8D38435A79E95E /* Pods-Carent - رزرو خودرو-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C99E4C981796CC60D531F96B5EB5B06 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8C11267DFB42345A99EE3CCC4D96E /* CustomFunctions.swift */; };
+		42E116369DE58940D563406F7CD5D9C5 /* ACFloatingTextfield-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA7DE6873F65E4D7239C53F170B4ABB /* ACFloatingTextfield-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49010E4EF1369A100DE9FE610B53D33A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4DD509C554025320712ABC7A2BDEDD24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		66AD9599A8D18DAAB7A2547D36038347 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC4E2ADB269B5D03841CDE88CEB919 /* Collation.swift */; };
+		68DA54DDD0B5DB6CC759FFE1823867E1 /* ACFloatingTextfield-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C43ED312A2741F0892CE5147CFADD /* ACFloatingTextfield-Swift-dummy.m */; };
+		6C7285409E1D641031BA217E7B38BFC7 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E775FD5CA5ABA1A2C725E5A8DA5446E2 /* Errors.swift */; };
+		73A4FC0CA7321C6CA7C95B1869F141F3 /* SlideMenuControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C8E514D59E2E37BAC18DCE2A1B32F9 /* SlideMenuControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81C408281418439A00504DF2940FEA17 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1709B08E82585D33B313E24D0EE5EA /* SQLite.swift-dummy.m */; };
+		A0AC8CA1F0249FB696C9BFAF528BB41C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A80E0ACA35EADEB3A402EA843469E4EA /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D092589AB5229B207F3D139103E80D /* Expression.swift */; };
+		A8B54861CF3920C55D4A68AF95EE8B0A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C1BF2EE6790BE4D334D1066A8C4C1 /* Helpers.swift */; };
+		AB2A3726D39600E95C250B2DA9B615ED /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC5E2171877BF547A7287094AD1EB1 /* Connection.swift */; };
+		B87FE7B28A18B43C9B455CD17271C031 /* Pods-Carent - رزرو خودرو-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07AE91D6C62605A44D95695893BF37 /* Pods-Carent - رزرو خودرو-dummy.m */; };
+		B8926F701E900219554D355FD6E1D586 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52EF51558938A2690CB2AA9FF8DA909 /* CoreFunctions.swift */; };
+		BCA913F162A67B83736AED4E81E65820 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDC60B9E7BC757E952241EF69BE8C3 /* RTree.swift */; };
+		BCAB2F693018816594FE8671425867BF /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 408068F86014910109A84E4D1ACDB7B4 /* SQLite-Bridging.m */; };
+		BCF966933E5325057B2A7500BCF88262 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC155A2A6BFC935E7A7DC13C9B321179 /* DateAndTimeFunctions.swift */; };
+		BDBBDF96254505D0B9978B0B3BD8E58D /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A3B51DC77AAA62A643F560B99EC5A /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C0A1C0B9D6CE14504593A2072EB7983F /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792493CD19E21378282B1DAA7C965177 /* Coding.swift */; };
+		C4FA89F5928D9647EBEEEBE8575B6125 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9102309A6ED5EB3E34C0B26BA523D1 /* Setter.swift */; };
+		C53D36447BC2C803213403F21F83984A /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F7F857CE97219CFDF85864A1CE75 /* Blob.swift */; };
+		C54173E2F5386B1BC535254B7A338C83 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8079D78A0F91D136BAB4A5B1ADB99B /* Value.swift */; };
+		D490F50C24C5CD8E114A882C3930A89C /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EACB45855737179C74A71C946342FC /* Statement.swift */; };
+		D51061BC108A3EF62713F7E43B9A910F /* SlideMenuControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED116FF0A2DB22F34548C12A4135AB /* SlideMenuControllerSwift-dummy.m */; };
+		D65FC25052E9C73010031029AA9135D1 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED31C7C7D53F425C40194444D77294B /* Foundation.swift */; };
+		E6D1A3036749C3D5E472F28BC05E5AEE /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C708B1E067ABC9CA0B5E2CFB018209A /* Schema.swift */; };
+		E9A503399A45E7AA0E6E564B52744571 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4ADB71E040BB76B991CDBFBB76B2C8 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0E5EDC6CF22BD32B7CD791E24E6A4F6 /* ACFloatingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A085791D06C87786E4FD79CCDA078 /* ACFloatingTextfield.swift */; };
+		F7BC8CA2A96842AB653FF87759EE37C5 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 521219CFEF8D669AFD84DE259201A306 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F906D9775249ACA6CBBD0ACA4B355C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94D4CFCDC55F39FB7431C5E8C3994A2;
+			remoteInfo = "ACFloatingTextfield-Swift";
+		};
+		7DBF989A2E6F892EE716B72A9AAB1B41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAAD3AD49A5A0DA51FF59FA5F4379D0C;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+		F14BAE164CC360251D134CA775234BA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 301C429EC59605C4C0D090D7F0C03454;
+			remoteInfo = SQLite.swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C8E514D59E2E37BAC18DCE2A1B32F9 /* SlideMenuControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-umbrella.h"; sourceTree = "<group>"; };
+		063AFD4F9980558515414E6A3A02BB01 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		0C708B1E067ABC9CA0B5E2CFB018209A /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		0F4ADB71E040BB76B991CDBFBB76B2C8 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		10F40DA5B47A9093DF709F6DAADE4078 /* ACFloatingTextfield-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "ACFloatingTextfield-Swift.modulemap"; sourceTree = "<group>"; };
+		173A085791D06C87786E4FD79CCDA078 /* ACFloatingTextfield.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACFloatingTextfield.swift; path = "Source-Swift/ACFloatingTextfield.swift"; sourceTree = "<group>"; };
+		18C357C2A9CD04ADA627F6AAF085B0E5 /* Pods-Carent - رزرو خودرو.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Carent - رزرو خودرو.modulemap"; sourceTree = "<group>"; };
+		19EACB45855737179C74A71C946342FC /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		2A9102309A6ED5EB3E34C0B26BA523D1 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		2B4C43ED312A2741F0892CE5147CFADD /* ACFloatingTextfield-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACFloatingTextfield-Swift-dummy.m"; sourceTree = "<group>"; };
+		2EF85690FD668A0A569887BC2F0D6260 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		31ED116FF0A2DB22F34548C12A4135AB /* SlideMenuControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideMenuControllerSwift-dummy.m"; sourceTree = "<group>"; };
+		3E1709B08E82585D33B313E24D0EE5EA /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		408068F86014910109A84E4D1ACDB7B4 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		45B9D58700096442BDDB7788160C3275 /* SlideMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = Source/SlideMenuController.swift; sourceTree = "<group>"; };
+		4FBC9A3F2ED29BD8E891102EE68E8E72 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		4FDC5E2171877BF547A7287094AD1EB1 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		506A59EBA9A3D7A822E2233C6A1F19CE /* Pods-Carent - رزرو خودرو-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Carent - رزرو خودرو-frameworks.sh"; sourceTree = "<group>"; };
+		51F20A6246C4AEDA71C94BCCCC4F6D93 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		521219CFEF8D669AFD84DE259201A306 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		52CC4E2ADB269B5D03841CDE88CEB919 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		58B964EAE8A8EF32BC0921066E0780CD /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED31C7C7D53F425C40194444D77294B /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		60C7C94FBF9B18A399DA6A3228C8BAD9 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		675B3CF29D2AC94A31D99A16CE5B063D /* ACFloatingTextfield_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACFloatingTextfield_Swift.framework; path = "ACFloatingTextfield-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA7DE6873F65E4D7239C53F170B4ABB /* ACFloatingTextfield-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACFloatingTextfield-Swift-umbrella.h"; sourceTree = "<group>"; };
+		6F07AE91D6C62605A44D95695893BF37 /* Pods-Carent - رزرو خودرو-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Carent - رزرو خودرو-dummy.m"; sourceTree = "<group>"; };
+		743895E402FC1F42F1E08683FCB4E826 /* SlideMenuControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SlideMenuControllerSwift.modulemap; sourceTree = "<group>"; };
+		75AE587E7A40C8151A272671607FD2EA /* Pods_Carent_____________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Carent_____________.framework; path = "Pods-Carent - رزرو خودرو.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C8C11267DFB42345A99EE3CCC4D96E /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		792493CD19E21378282B1DAA7C965177 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
+		7E4340C446056206CC7138AB5D7CCFC6 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		82E97A2F055C42A1389556231E804CF0 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		84D368C270EDE7BAB5C6B67756455E0A /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SlideMenuControllerSwift.framework; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		865DB0A703618F10CC138B135F7A10F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98B3F7F857CE97219CFDF85864A1CE75 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		A6DDC60B9E7BC757E952241EF69BE8C3 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		A7F10F8BC7269E787426E104684ECC7A /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		AA026B998293DDE808A8283181C9727C /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		AA3355D2DF614D97B16894C3ADE1104D /* Pods-Carent - رزرو خودرو-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Carent - رزرو خودرو-acknowledgements.plist"; sourceTree = "<group>"; };
+		B13501C4DFADC193C8A3FADC4B8C32DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B924C97D25A57B2EA3C568E19C1B6E1B /* ACFloatingTextfield-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACFloatingTextfield-Swift-prefix.pch"; sourceTree = "<group>"; };
+		B9D092589AB5229B207F3D139103E80D /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		BB967DFCC38F2819386F9BCDAFDDABAF /* SlideMenuControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlideMenuControllerSwift.xcconfig; sourceTree = "<group>"; };
+		BDB5E1F5B62BAF56D08BFC5A3ED7AB12 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06A6BCF4528F916754BEEDF9BE3E8E0 /* ACFloatingTextfield-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ACFloatingTextfield-Swift.xcconfig"; sourceTree = "<group>"; };
+		C7B353694CB98052D828D192DFC7B14B /* Pods-Carent - رزرو خودرو.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Carent - رزرو خودرو.release.xcconfig"; sourceTree = "<group>"; };
+		CB87F7E15875D8B48566F40C0727AED8 /* Pods-Carent - رزرو خودرو-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Carent - رزرو خودرو-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC155A2A6BFC935E7A7DC13C9B321179 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		CCDABF5DA0C8F030DBBE84077CDCEC96 /* Pods-Carent - رزرو خودرو.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Carent - رزرو خودرو.debug.xcconfig"; sourceTree = "<group>"; };
+		CD0A3B51DC77AAA62A643F560B99EC5A /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		CE4C1BF2EE6790BE4D334D1066A8C4C1 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		D048CD47CB0E7D93C9225BA74CCE3349 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6903D7511354876330886839B65484 /* Pods-Carent - رزرو خودرو-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Carent - رزرو خودرو-resources.sh"; sourceTree = "<group>"; };
+		E775FD5CA5ABA1A2C725E5A8DA5446E2 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
+		EF8079D78A0F91D136BAB4A5B1ADB99B /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		EFAA258A075B299FEA8D38435A79E95E /* Pods-Carent - رزرو خودرو-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Carent - رزرو خودرو-umbrella.h"; sourceTree = "<group>"; };
+		F52EF51558938A2690CB2AA9FF8DA909 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		FEBD69B37FE2AD774CF6ED78591CB6F4 /* SlideMenuControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45CA494A644095945EE7AD397472C21B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AC8CA1F0249FB696C9BFAF528BB41C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		512D7BA6EDFDABD0F5094D8FD4050651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49010E4EF1369A100DE9FE610B53D33A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FDA22B46DD8820ED9435D54D4C3061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD509C554025320712ABC7A2BDEDD24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1404E50BC1BD5BEA20CA0D1C2B2B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4F39648842BFFFE52180847A3A6C05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FC8A7EF550C35D8320EFBA3D9DE5F74 /* Pods-Carent - رزرو خودرو */ = {
+			isa = PBXGroup;
+			children = (
+				865DB0A703618F10CC138B135F7A10F2 /* Info.plist */,
+				18C357C2A9CD04ADA627F6AAF085B0E5 /* Pods-Carent - رزرو خودرو.modulemap */,
+				CB87F7E15875D8B48566F40C0727AED8 /* Pods-Carent - رزرو خودرو-acknowledgements.markdown */,
+				AA3355D2DF614D97B16894C3ADE1104D /* Pods-Carent - رزرو خودرو-acknowledgements.plist */,
+				6F07AE91D6C62605A44D95695893BF37 /* Pods-Carent - رزرو خودرو-dummy.m */,
+				506A59EBA9A3D7A822E2233C6A1F19CE /* Pods-Carent - رزرو خودرو-frameworks.sh */,
+				DB6903D7511354876330886839B65484 /* Pods-Carent - رزرو خودرو-resources.sh */,
+				EFAA258A075B299FEA8D38435A79E95E /* Pods-Carent - رزرو خودرو-umbrella.h */,
+				CCDABF5DA0C8F030DBBE84077CDCEC96 /* Pods-Carent - رزرو خودرو.debug.xcconfig */,
+				C7B353694CB98052D828D192DFC7B14B /* Pods-Carent - رزرو خودرو.release.xcconfig */,
+			);
+			name = "Pods-Carent - رزرو خودرو";
+			path = "Target Support Files/Pods-Carent - رزرو خودرو";
+			sourceTree = "<group>";
+		};
+		430A9B7C88960A21772BD23FE8A9D554 /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				A5B9009D54EE033F7ADCD952DEEC6A8E /* standard */,
+				C5729B254AFA3B9A3EE2F62A8069CAC8 /* Support Files */,
+			);
+			name = SQLite.swift;
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		549C3657A729DAB86FDE24F007EE585C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D048CD47CB0E7D93C9225BA74CCE3349 /* Info.plist */,
+				743895E402FC1F42F1E08683FCB4E826 /* SlideMenuControllerSwift.modulemap */,
+				BB967DFCC38F2819386F9BCDAFDDABAF /* SlideMenuControllerSwift.xcconfig */,
+				31ED116FF0A2DB22F34548C12A4135AB /* SlideMenuControllerSwift-dummy.m */,
+				FEBD69B37FE2AD774CF6ED78591CB6F4 /* SlideMenuControllerSwift-prefix.pch */,
+				01C8E514D59E2E37BAC18DCE2A1B32F9 /* SlideMenuControllerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SlideMenuControllerSwift";
+			sourceTree = "<group>";
+		};
+		5B767997D5F8D93BC911D55D63BEDD3E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10F40DA5B47A9093DF709F6DAADE4078 /* ACFloatingTextfield-Swift.modulemap */,
+				C06A6BCF4528F916754BEEDF9BE3E8E0 /* ACFloatingTextfield-Swift.xcconfig */,
+				2B4C43ED312A2741F0892CE5147CFADD /* ACFloatingTextfield-Swift-dummy.m */,
+				B924C97D25A57B2EA3C568E19C1B6E1B /* ACFloatingTextfield-Swift-prefix.pch */,
+				6CA7DE6873F65E4D7239C53F170B4ABB /* ACFloatingTextfield-Swift-umbrella.h */,
+				BDB5E1F5B62BAF56D08BFC5A3ED7AB12 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACFloatingTextfield-Swift";
+			sourceTree = "<group>";
+		};
+		6783AB5837B8F4C7555D43F7FB0CE35C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				675B3CF29D2AC94A31D99A16CE5B063D /* ACFloatingTextfield_Swift.framework */,
+				75AE587E7A40C8151A272671607FD2EA /* Pods_Carent_____________.framework */,
+				84D368C270EDE7BAB5C6B67756455E0A /* SlideMenuControllerSwift.framework */,
+				58B964EAE8A8EF32BC0921066E0780CD /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				AEC7A0F0874CF7AFB2445AB17DD8A6BB /* Pods */,
+				6783AB5837B8F4C7555D43F7FB0CE35C /* Products */,
+				E944047D0B6C9FEC5B3B3C727044CD6F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		90BB06C2CE502C1E57E3F45E5CB169A5 /* ACFloatingTextfield-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				173A085791D06C87786E4FD79CCDA078 /* ACFloatingTextfield.swift */,
+				5B767997D5F8D93BC911D55D63BEDD3E /* Support Files */,
+			);
+			name = "ACFloatingTextfield-Swift";
+			path = "ACFloatingTextfield-Swift";
+			sourceTree = "<group>";
+		};
+		A5B9009D54EE033F7ADCD952DEEC6A8E /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				60C7C94FBF9B18A399DA6A3228C8BAD9 /* AggregateFunctions.swift */,
+				98B3F7F857CE97219CFDF85864A1CE75 /* Blob.swift */,
+				792493CD19E21378282B1DAA7C965177 /* Coding.swift */,
+				52CC4E2ADB269B5D03841CDE88CEB919 /* Collation.swift */,
+				4FDC5E2171877BF547A7287094AD1EB1 /* Connection.swift */,
+				F52EF51558938A2690CB2AA9FF8DA909 /* CoreFunctions.swift */,
+				78C8C11267DFB42345A99EE3CCC4D96E /* CustomFunctions.swift */,
+				CC155A2A6BFC935E7A7DC13C9B321179 /* DateAndTimeFunctions.swift */,
+				E775FD5CA5ABA1A2C725E5A8DA5446E2 /* Errors.swift */,
+				B9D092589AB5229B207F3D139103E80D /* Expression.swift */,
+				5ED31C7C7D53F425C40194444D77294B /* Foundation.swift */,
+				CD0A3B51DC77AAA62A643F560B99EC5A /* fts3_tokenizer.h */,
+				A7F10F8BC7269E787426E104684ECC7A /* FTS4.swift */,
+				2EF85690FD668A0A569887BC2F0D6260 /* FTS5.swift */,
+				CE4C1BF2EE6790BE4D334D1066A8C4C1 /* Helpers.swift */,
+				4FBC9A3F2ED29BD8E891102EE68E8E72 /* Operators.swift */,
+				82E97A2F055C42A1389556231E804CF0 /* Query.swift */,
+				A6DDC60B9E7BC757E952241EF69BE8C3 /* RTree.swift */,
+				0C708B1E067ABC9CA0B5E2CFB018209A /* Schema.swift */,
+				2A9102309A6ED5EB3E34C0B26BA523D1 /* Setter.swift */,
+				521219CFEF8D669AFD84DE259201A306 /* SQLite.h */,
+				AA026B998293DDE808A8283181C9727C /* SQLite-Bridging.h */,
+				408068F86014910109A84E4D1ACDB7B4 /* SQLite-Bridging.m */,
+				19EACB45855737179C74A71C946342FC /* Statement.swift */,
+				EF8079D78A0F91D136BAB4A5B1ADB99B /* Value.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		AEC7A0F0874CF7AFB2445AB17DD8A6BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90BB06C2CE502C1E57E3F45E5CB169A5 /* ACFloatingTextfield-Swift */,
+				E856E48611D7DBC229696C4C14115283 /* SlideMenuControllerSwift */,
+				430A9B7C88960A21772BD23FE8A9D554 /* SQLite.swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5729B254AFA3B9A3EE2F62A8069CAC8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B13501C4DFADC193C8A3FADC4B8C32DD /* Info.plist */,
+				063AFD4F9980558515414E6A3A02BB01 /* SQLite.swift.modulemap */,
+				51F20A6246C4AEDA71C94BCCCC4F6D93 /* SQLite.swift.xcconfig */,
+				3E1709B08E82585D33B313E24D0EE5EA /* SQLite.swift-dummy.m */,
+				7E4340C446056206CC7138AB5D7CCFC6 /* SQLite.swift-prefix.pch */,
+				0F4ADB71E040BB76B991CDBFBB76B2C8 /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E856E48611D7DBC229696C4C14115283 /* SlideMenuControllerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				45B9D58700096442BDDB7788160C3275 /* SlideMenuController.swift */,
+				549C3657A729DAB86FDE24F007EE585C /* Support Files */,
+			);
+			name = SlideMenuControllerSwift;
+			path = SlideMenuControllerSwift;
+			sourceTree = "<group>";
+		};
+		E944047D0B6C9FEC5B3B3C727044CD6F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FC8A7EF550C35D8320EFBA3D9DE5F74 /* Pods-Carent - رزرو خودرو */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06093B285D3C14DF4E102F32A05E16ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73A4FC0CA7321C6CA7C95B1869F141F3 /* SlideMenuControllerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DF5660A407A77A533CF0957777A4FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37BB8E73A5BB6A1497524F9230798023 /* Pods-Carent - رزرو خودرو-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F47FB22FE6337ECC008ACCC8A8BFB1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBBDF96254505D0B9978B0B3BD8E58D /* fts3_tokenizer.h in Headers */,
+				004673D7034078CC6992190D7CBA9F27 /* SQLite-Bridging.h in Headers */,
+				F7BC8CA2A96842AB653FF87759EE37C5 /* SQLite.h in Headers */,
+				E9A503399A45E7AA0E6E564B52744571 /* SQLite.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F6D708DBB509DE6B6B89F9AB1811BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E116369DE58940D563406F7CD5D9C5 /* ACFloatingTextfield-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		301C429EC59605C4C0D090D7F0C03454 /* SQLite.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBC0304566590272D203516961BA134 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildPhases = (
+				20A38952E83A6D80D7CB927FF4BDA0AA /* Sources */,
+				D0D1404E50BC1BD5BEA20CA0D1C2B2B7 /* Frameworks */,
+				3F47FB22FE6337ECC008ACCC8A8BFB1D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = 58B964EAE8A8EF32BC0921066E0780CD /* SQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BED165A1E62CB6DBD851D4E9D8E9BAB /* Pods-Carent - رزرو خودرو */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F80F03BDA27263B19768DE8DD6C7F4 /* Build configuration list for PBXNativeTarget "Pods-Carent - رزرو خودرو" */;
+			buildPhases = (
+				C501813F075F5A5138CA759AFF8D34DA /* Sources */,
+				512D7BA6EDFDABD0F5094D8FD4050651 /* Frameworks */,
+				36DF5660A407A77A533CF0957777A4FB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93F76D9C5B1AC3DDCFA721DD5135BC2E /* PBXTargetDependency */,
+				FA544D5D1C1C78BFD8EEC67C81613013 /* PBXTargetDependency */,
+				458D44AD6309377A726A19D89394CBA2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Carent - رزرو خودرو";
+			productName = "Pods-Carent - رزرو خودرو";
+			productReference = 75AE587E7A40C8151A272671607FD2EA /* Pods_Carent_____________.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A94D4CFCDC55F39FB7431C5E8C3994A2 /* ACFloatingTextfield-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8AE97136AA2CD6C261AA941AC07F3B /* Build configuration list for PBXNativeTarget "ACFloatingTextfield-Swift" */;
+			buildPhases = (
+				651654C469D3C799AECAE53EB70159A2 /* Sources */,
+				45CA494A644095945EE7AD397472C21B /* Frameworks */,
+				D9F6D708DBB509DE6B6B89F9AB1811BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ACFloatingTextfield-Swift";
+			productName = "ACFloatingTextfield-Swift";
+			productReference = 675B3CF29D2AC94A31D99A16CE5B063D /* ACFloatingTextfield_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAAD3AD49A5A0DA51FF59FA5F4379D0C /* SlideMenuControllerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 874C8EF353DB77914599F078EF430A16 /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */;
+			buildPhases = (
+				017E66AB7D61357D695501D8556554D0 /* Sources */,
+				55FDA22B46DD8820ED9435D54D4C3061 /* Frameworks */,
+				06093B285D3C14DF4E102F32A05E16ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideMenuControllerSwift;
+			productName = SlideMenuControllerSwift;
+			productReference = 84D368C270EDE7BAB5C6B67756455E0A /* SlideMenuControllerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6783AB5837B8F4C7555D43F7FB0CE35C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A94D4CFCDC55F39FB7431C5E8C3994A2 /* ACFloatingTextfield-Swift */,
+				8BED165A1E62CB6DBD851D4E9D8E9BAB /* Pods-Carent - رزرو خودرو */,
+				AAAD3AD49A5A0DA51FF59FA5F4379D0C /* SlideMenuControllerSwift */,
+				301C429EC59605C4C0D090D7F0C03454 /* SQLite.swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		017E66AB7D61357D695501D8556554D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B5A121CE63FB5DB224323A509BA215 /* SlideMenuController.swift in Sources */,
+				D51061BC108A3EF62713F7E43B9A910F /* SlideMenuControllerSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20A38952E83A6D80D7CB927FF4BDA0AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713F9193C31DF2A434D5B26BC94DBCF /* AggregateFunctions.swift in Sources */,
+				C53D36447BC2C803213403F21F83984A /* Blob.swift in Sources */,
+				C0A1C0B9D6CE14504593A2072EB7983F /* Coding.swift in Sources */,
+				66AD9599A8D18DAAB7A2547D36038347 /* Collation.swift in Sources */,
+				AB2A3726D39600E95C250B2DA9B615ED /* Connection.swift in Sources */,
+				B8926F701E900219554D355FD6E1D586 /* CoreFunctions.swift in Sources */,
+				3C99E4C981796CC60D531F96B5EB5B06 /* CustomFunctions.swift in Sources */,
+				BCF966933E5325057B2A7500BCF88262 /* DateAndTimeFunctions.swift in Sources */,
+				6C7285409E1D641031BA217E7B38BFC7 /* Errors.swift in Sources */,
+				A80E0ACA35EADEB3A402EA843469E4EA /* Expression.swift in Sources */,
+				D65FC25052E9C73010031029AA9135D1 /* Foundation.swift in Sources */,
+				05042C714F1185322B56D259E56EDDB0 /* FTS4.swift in Sources */,
+				09D013631BB95BB1D374099FDFF56B75 /* FTS5.swift in Sources */,
+				A8B54861CF3920C55D4A68AF95EE8B0A /* Helpers.swift in Sources */,
+				268B4EED8B7290FB591B356E76807C15 /* Operators.swift in Sources */,
+				322A19757D4796413B2B9775C1796BD6 /* Query.swift in Sources */,
+				BCA913F162A67B83736AED4E81E65820 /* RTree.swift in Sources */,
+				E6D1A3036749C3D5E472F28BC05E5AEE /* Schema.swift in Sources */,
+				C4FA89F5928D9647EBEEEBE8575B6125 /* Setter.swift in Sources */,
+				BCAB2F693018816594FE8671425867BF /* SQLite-Bridging.m in Sources */,
+				81C408281418439A00504DF2940FEA17 /* SQLite.swift-dummy.m in Sources */,
+				D490F50C24C5CD8E114A882C3930A89C /* Statement.swift in Sources */,
+				C54173E2F5386B1BC535254B7A338C83 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651654C469D3C799AECAE53EB70159A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DA54DDD0B5DB6CC759FFE1823867E1 /* ACFloatingTextfield-Swift-dummy.m in Sources */,
+				F0E5EDC6CF22BD32B7CD791E24E6A4F6 /* ACFloatingTextfield.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C501813F075F5A5138CA759AFF8D34DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87FE7B28A18B43C9B455CD17271C031 /* Pods-Carent - رزرو خودرو-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		458D44AD6309377A726A19D89394CBA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = AAAD3AD49A5A0DA51FF59FA5F4379D0C /* SlideMenuControllerSwift */;
+			targetProxy = 7DBF989A2E6F892EE716B72A9AAB1B41 /* PBXContainerItemProxy */;
+		};
+		93F76D9C5B1AC3DDCFA721DD5135BC2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ACFloatingTextfield-Swift";
+			target = A94D4CFCDC55F39FB7431C5E8C3994A2 /* ACFloatingTextfield-Swift */;
+			targetProxy = 0F906D9775249ACA6CBBD0ACA4B355C6 /* PBXContainerItemProxy */;
+		};
+		FA544D5D1C1C78BFD8EEC67C81613013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 301C429EC59605C4C0D090D7F0C03454 /* SQLite.swift */;
+			targetProxy = F14BAE164CC360251D134CA775234BA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		425EAC6E4380C91109F7FF069D5523B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F20A6246C4AEDA71C94BCCCC4F6D93 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5253CC4D7138274448AF16C9CD3B90EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06A6BCF4528F916754BEEDF9BE3E8E0 /* ACFloatingTextfield-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACFloatingTextfield-Swift/ACFloatingTextfield-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACFloatingTextfield-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ACFloatingTextfield-Swift/ACFloatingTextfield-Swift.modulemap";
+				PRODUCT_NAME = ACFloatingTextfield_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8E35CF760B665B57B3AF3C7DBB8CC723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB967DFCC38F2819386F9BCDAFDDABAF /* SlideMenuControllerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				PRODUCT_NAME = SlideMenuControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D7F9BBDA04989EEFAD4DBBE13521210D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCDABF5DA0C8F030DBBE84077CDCEC96 /* Pods-Carent - رزرو خودرو.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Carent - رزرو خودرو/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Carent - رزرو خودرو/Pods-Carent - رزرو خودرو.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Carent_____________;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB1CB4FF1BFAF2BDDD723A54020C925E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06A6BCF4528F916754BEEDF9BE3E8E0 /* ACFloatingTextfield-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACFloatingTextfield-Swift/ACFloatingTextfield-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACFloatingTextfield-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ACFloatingTextfield-Swift/ACFloatingTextfield-Swift.modulemap";
+				PRODUCT_NAME = ACFloatingTextfield_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2220BB3B146D6EE19E5095D4E788A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B353694CB98052D828D192DFC7B14B /* Pods-Carent - رزرو خودرو.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Carent - رزرو خودرو/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Carent - رزرو خودرو/Pods-Carent - رزرو خودرو.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Carent_____________;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E661D7B1B488D7D2D938B95B3FF5F205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB967DFCC38F2819386F9BCDAFDDABAF /* SlideMenuControllerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				PRODUCT_NAME = SlideMenuControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F49E028A054F40940429A879FFCC451E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F20A6246C4AEDA71C94BCCCC4F6D93 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F80F03BDA27263B19768DE8DD6C7F4 /* Build configuration list for PBXNativeTarget "Pods-Carent - رزرو خودرو" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F9BBDA04989EEFAD4DBBE13521210D /* Debug */,
+				E2220BB3B146D6EE19E5095D4E788A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8AE97136AA2CD6C261AA941AC07F3B /* Build configuration list for PBXNativeTarget "ACFloatingTextfield-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1CB4FF1BFAF2BDDD723A54020C925E /* Debug */,
+				5253CC4D7138274448AF16C9CD3B90EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		874C8EF353DB77914599F078EF430A16 /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E35CF760B665B57B3AF3C7DBB8CC723 /* Debug */,
+				E661D7B1B488D7D2D938B95B3FF5F205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBC0304566590272D203516961BA134 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49E028A054F40940429A879FFCC451E /* Debug */,
+				425EAC6E4380C91109F7FF069D5523B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

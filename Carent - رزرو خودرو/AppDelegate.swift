@@ -7,15 +7,39 @@
 //
 
 import UIKit
-
+import SlideMenuControllerSwift
+import SQLite
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let firstTime = UserDefaults.standard.value(forKey: "first") as? Bool {
+            if firstTime {
+                UserDefaults.standard.setValue(false, forKey: "first")
+            }
+        }else{
+            let path = NSSearchPathForDirectoriesInDomains(
+                .documentDirectory, .userDomainMask, true
+                ).first!
+            do {
+                let _ = try Connection("\(path)/Carent.sqlite3")
+            }catch{print(error)}
+        }
+        let initialViewController = Page1VC(nibName: "Page1VC", bundle: nil)
+        let rightVC = DrawerVC(nibName: "DrawerVC", bundle: nil)
+        let nvc = UINavigationController(rootViewController: initialViewController)
+        navController = nvc
+        nvc.navigationBar.isHidden = true
+        slideMenu = SlideMenuController(mainViewController: nvc, rightMenuViewController: rightVC)
+        slideMenu.delegate = self
+        let frame = UIScreen.main.bounds
+        window = UIWindow(frame: frame)
+        window!.rootViewController = slideMenu
+        window!.makeKeyAndVisible()
+        
         return true
     }
 
@@ -41,6 +65,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+}
+extension AppDelegate: SlideMenuControllerDelegate {
+    func rightDidOpen() {
+//        let nvc = (slideMenu.mainViewController as! UINavigationController)
+//        if let vc = nvc.topViewController as? DrawerVC {
+//            vc.tableView.reloadData()
+//        }
+//        Floaty.global.hide()
+//
+    }
+    
+    func rightDidClose() {
+//        let nvc = (slideMenu.mainViewController as? UINavigationController)
+//        if nvc?.topViewController is MainVC {
+//            Floaty.global.show()
+//        }else {
+//            Floaty.global.hide()
+//        }
+    }
+    
 }
 

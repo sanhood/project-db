@@ -7,13 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B85D088ED3F1A2A368670C1A /* Pods_Carent_____________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE2E251DED6D442463962AE /* Pods_Carent_____________.framework */; };
+		D235C1672029B41800A9CA73 /* Page1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D235C1652029B41800A9CA73 /* Page1VC.swift */; };
+		D235C1682029B41800A9CA73 /* Page1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D235C1662029B41800A9CA73 /* Page1VC.xib */; };
+		D235C16E2029B6D300A9CA73 /* IRANSansMobile.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D235C1692029B6D200A9CA73 /* IRANSansMobile.ttf */; };
+		D235C16F2029B6D300A9CA73 /* IRANSansMobile_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D235C16A2029B6D200A9CA73 /* IRANSansMobile_Bold.ttf */; };
+		D235C1702029B6D300A9CA73 /* IRANSansMobile_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D235C16B2029B6D300A9CA73 /* IRANSansMobile_Medium.ttf */; };
+		D235C1712029B6D300A9CA73 /* IRANSansMobile_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D235C16C2029B6D300A9CA73 /* IRANSansMobile_Light.ttf */; };
+		D235C1722029B6D300A9CA73 /* IRANSansMobile_Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D235C16D2029B6D300A9CA73 /* IRANSansMobile_Black.ttf */; };
+		D269776E202B390E00A721CC /* DrawerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269776C202B390E00A721CC /* DrawerCell.swift */; };
+		D269776F202B390E00A721CC /* DrawerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D269776D202B390E00A721CC /* DrawerCell.xib */; };
+		D2697772202B3F3200A721CC /* RentCarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2697770202B3F3200A721CC /* RentCarVC.swift */; };
+		D2697773202B3F3200A721CC /* RentCarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2697771202B3F3200A721CC /* RentCarVC.xib */; };
+		D2697776202B479600A721CC /* ChooseDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2697774202B479600A721CC /* ChooseDriver.swift */; };
+		D2697777202B479600A721CC /* ChooseDriver.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2697775202B479600A721CC /* ChooseDriver.xib */; };
+		D2697779202B493700A721CC /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2697778202B493700A721CC /* Driver.swift */; };
+		D269777E202B498700A721CC /* ChooseDriversCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269777C202B498700A721CC /* ChooseDriversCell.swift */; };
+		D269777F202B498700A721CC /* ChooseDriversCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D269777D202B498700A721CC /* ChooseDriversCell.xib */; };
 		D28D22262029AD8C006D18DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28D22252029AD8C006D18DB /* AppDelegate.swift */; };
 		D28D22282029AD8C006D18DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28D22272029AD8C006D18DB /* ViewController.swift */; };
-		D28D222B2029AD8C006D18DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28D22292029AD8C006D18DB /* Main.storyboard */; };
 		D28D222D2029AD8C006D18DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28D222C2029AD8C006D18DB /* Assets.xcassets */; };
 		D28D22302029AD8C006D18DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28D222E2029AD8C006D18DB /* LaunchScreen.storyboard */; };
 		D28D223B2029AD8D006D18DB /* Carent_____________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28D223A2029AD8D006D18DB /* Carent_____________Tests.swift */; };
 		D28D22462029AD8D006D18DB /* Carent_____________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28D22452029AD8D006D18DB /* Carent_____________UITests.swift */; };
+		D2A4090B2029D54B00661263 /* AdminPanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A409092029D54B00661263 /* AdminPanelVC.swift */; };
+		D2A4090C2029D54B00661263 /* AdminPanelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A4090A2029D54B00661263 /* AdminPanelVC.xib */; };
+		D2A4090F2029D56D00661263 /* CarsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4090D2029D56D00661263 /* CarsListVC.swift */; };
+		D2A409102029D56D00661263 /* CarsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A4090E2029D56D00661263 /* CarsListVC.xib */; };
+		D2A409132029DAD300661263 /* DrawerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A409112029DAD300661263 /* DrawerVC.swift */; };
+		D2A409142029DAD300661263 /* DrawerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A409122029DAD300661263 /* DrawerVC.xib */; };
+		D2A409162029DB3300661263 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A409152029DB3300661263 /* Globals.swift */; };
+		D2A409192029DE3000661263 /* RegisterationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A409172029DE3000661263 /* RegisterationVC.swift */; };
+		D2A4091A2029DE3000661263 /* RegisterationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A409182029DE3000661263 /* RegisterationVC.xib */; };
+		D2A4091D2029E5D800661263 /* RegisterEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4091B2029E5D800661263 /* RegisterEmail.swift */; };
+		D2A4091E2029E5D800661263 /* RegisterEmail.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A4091C2029E5D800661263 /* RegisterEmail.xib */; };
+		D2A409252029F31100661263 /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A409232029F31100661263 /* CarCollectionViewCell.swift */; };
+		D2A409262029F31100661263 /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A409242029F31100661263 /* CarCollectionViewCell.xib */; };
+		D2A409282029F35C00661263 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A409272029F35C00661263 /* Car.swift */; };
+		D2A4092A2029F49400661263 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A409292029F49400661263 /* Info.swift */; };
+		D2A4092C2029F4DA00661263 /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4092B2029F4DA00661263 /* Insurance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +66,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		626114309F9C2A2739DA43A7 /* Pods-Carent - رزرو خودرو.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carent - رزرو خودرو.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carent - رزرو خودرو/Pods-Carent - رزرو خودرو.release.xcconfig"; sourceTree = "<group>"; };
+		D235C1652029B41800A9CA73 /* Page1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1VC.swift; sourceTree = "<group>"; };
+		D235C1662029B41800A9CA73 /* Page1VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page1VC.xib; sourceTree = "<group>"; };
+		D235C1692029B6D200A9CA73 /* IRANSansMobile.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile.ttf; sourceTree = "<group>"; };
+		D235C16A2029B6D200A9CA73 /* IRANSansMobile_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile_Bold.ttf; sourceTree = "<group>"; };
+		D235C16B2029B6D300A9CA73 /* IRANSansMobile_Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile_Medium.ttf; sourceTree = "<group>"; };
+		D235C16C2029B6D300A9CA73 /* IRANSansMobile_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile_Light.ttf; sourceTree = "<group>"; };
+		D235C16D2029B6D300A9CA73 /* IRANSansMobile_Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile_Black.ttf; sourceTree = "<group>"; };
+		D269776C202B390E00A721CC /* DrawerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerCell.swift; sourceTree = "<group>"; };
+		D269776D202B390E00A721CC /* DrawerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawerCell.xib; sourceTree = "<group>"; };
+		D2697770202B3F3200A721CC /* RentCarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentCarVC.swift; sourceTree = "<group>"; };
+		D2697771202B3F3200A721CC /* RentCarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RentCarVC.xib; sourceTree = "<group>"; };
+		D2697774202B479600A721CC /* ChooseDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDriver.swift; sourceTree = "<group>"; };
+		D2697775202B479600A721CC /* ChooseDriver.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseDriver.xib; sourceTree = "<group>"; };
+		D2697778202B493700A721CC /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		D269777C202B498700A721CC /* ChooseDriversCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDriversCell.swift; sourceTree = "<group>"; };
+		D269777D202B498700A721CC /* ChooseDriversCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseDriversCell.xib; sourceTree = "<group>"; };
 		D28D22222029AD8C006D18DB /* Carent - رزرو خودرو.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carent - رزرو خودرو.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28D22252029AD8C006D18DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D28D22272029AD8C006D18DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D28D222A2029AD8C006D18DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D28D222C2029AD8C006D18DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D28D222F2029AD8C006D18DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D28D22312029AD8C006D18DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +95,24 @@
 		D28D22412029AD8D006D18DB /* Carent - رزرو خودروUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carent - رزرو خودروUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28D22452029AD8D006D18DB /* Carent_____________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Carent_____________UITests.swift"; sourceTree = "<group>"; };
 		D28D22472029AD8D006D18DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A409092029D54B00661263 /* AdminPanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelVC.swift; sourceTree = "<group>"; };
+		D2A4090A2029D54B00661263 /* AdminPanelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminPanelVC.xib; sourceTree = "<group>"; };
+		D2A4090D2029D56D00661263 /* CarsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListVC.swift; sourceTree = "<group>"; };
+		D2A4090E2029D56D00661263 /* CarsListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsListVC.xib; sourceTree = "<group>"; };
+		D2A409112029DAD300661263 /* DrawerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerVC.swift; sourceTree = "<group>"; };
+		D2A409122029DAD300661263 /* DrawerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawerVC.xib; sourceTree = "<group>"; };
+		D2A409152029DB3300661263 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		D2A409172029DE3000661263 /* RegisterationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationVC.swift; sourceTree = "<group>"; };
+		D2A409182029DE3000661263 /* RegisterationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterationVC.xib; sourceTree = "<group>"; };
+		D2A4091B2029E5D800661263 /* RegisterEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmail.swift; sourceTree = "<group>"; };
+		D2A4091C2029E5D800661263 /* RegisterEmail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterEmail.xib; sourceTree = "<group>"; };
+		D2A409232029F31100661263 /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2A409242029F31100661263 /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
+		D2A409272029F35C00661263 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		D2A409292029F49400661263 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		D2A4092B2029F4DA00661263 /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
+		FB0FA6C85DE314CF034C01DD /* Pods-Carent - رزرو خودرو.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carent - رزرو خودرو.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carent - رزرو خودرو/Pods-Carent - رزرو خودرو.debug.xcconfig"; sourceTree = "<group>"; };
+		FFE2E251DED6D442463962AE /* Pods_Carent_____________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Carent_____________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85D088ED3F1A2A368670C1A /* Pods_Carent_____________.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +141,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ECB902B3E2CF9A53B16FC5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB0FA6C85DE314CF034C01DD /* Pods-Carent - رزرو خودرو.debug.xcconfig */,
+				626114309F9C2A2739DA43A7 /* Pods-Carent - رزرو خودرو.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D235C1732029B6DC00A9CA73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D235C16D2029B6D300A9CA73 /* IRANSansMobile_Black.ttf */,
+				D235C16A2029B6D200A9CA73 /* IRANSansMobile_Bold.ttf */,
+				D235C16C2029B6D300A9CA73 /* IRANSansMobile_Light.ttf */,
+				D235C16B2029B6D300A9CA73 /* IRANSansMobile_Medium.ttf */,
+				D235C1692029B6D200A9CA73 /* IRANSansMobile.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D28D22192029AD8C006D18DB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +169,8 @@
 				D28D22392029AD8D006D18DB /* Carent - رزرو خودروTests */,
 				D28D22442029AD8D006D18DB /* Carent - رزرو خودروUITests */,
 				D28D22232029AD8C006D18DB /* Products */,
+				4ECB902B3E2CF9A53B16FC5F /* Pods */,
+				EC382CE52D431EAC5B6BCCBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +189,37 @@
 			children = (
 				D28D22252029AD8C006D18DB /* AppDelegate.swift */,
 				D28D22272029AD8C006D18DB /* ViewController.swift */,
-				D28D22292029AD8C006D18DB /* Main.storyboard */,
 				D28D222C2029AD8C006D18DB /* Assets.xcassets */,
 				D28D222E2029AD8C006D18DB /* LaunchScreen.storyboard */,
 				D28D22312029AD8C006D18DB /* Info.plist */,
+				D235C1652029B41800A9CA73 /* Page1VC.swift */,
+				D235C1662029B41800A9CA73 /* Page1VC.xib */,
+				D235C1732029B6DC00A9CA73 /* Resources */,
+				D2A409092029D54B00661263 /* AdminPanelVC.swift */,
+				D2A4090A2029D54B00661263 /* AdminPanelVC.xib */,
+				D2A4090D2029D56D00661263 /* CarsListVC.swift */,
+				D2A4090E2029D56D00661263 /* CarsListVC.xib */,
+				D2A409232029F31100661263 /* CarCollectionViewCell.swift */,
+				D2A409242029F31100661263 /* CarCollectionViewCell.xib */,
+				D2A409112029DAD300661263 /* DrawerVC.swift */,
+				D2A409122029DAD300661263 /* DrawerVC.xib */,
+				D2A409152029DB3300661263 /* Globals.swift */,
+				D2A4091B2029E5D800661263 /* RegisterEmail.swift */,
+				D2A4091C2029E5D800661263 /* RegisterEmail.xib */,
+				D2A409172029DE3000661263 /* RegisterationVC.swift */,
+				D2A409182029DE3000661263 /* RegisterationVC.xib */,
+				D2A409272029F35C00661263 /* Car.swift */,
+				D2A409292029F49400661263 /* Info.swift */,
+				D2A4092B2029F4DA00661263 /* Insurance.swift */,
+				D269776C202B390E00A721CC /* DrawerCell.swift */,
+				D269776D202B390E00A721CC /* DrawerCell.xib */,
+				D2697770202B3F3200A721CC /* RentCarVC.swift */,
+				D2697771202B3F3200A721CC /* RentCarVC.xib */,
+				D2697774202B479600A721CC /* ChooseDriver.swift */,
+				D2697775202B479600A721CC /* ChooseDriver.xib */,
+				D2697778202B493700A721CC /* Driver.swift */,
+				D269777C202B498700A721CC /* ChooseDriversCell.swift */,
+				D269777D202B498700A721CC /* ChooseDriversCell.xib */,
 			);
 			path = "Carent - رزرو خودرو";
 			sourceTree = "<group>";
@@ -125,6 +242,14 @@
 			path = "Carent - رزرو خودروUITests";
 			sourceTree = "<group>";
 		};
+		EC382CE52D431EAC5B6BCCBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFE2E251DED6D442463962AE /* Pods_Carent_____________.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D28D224A2029AD8D006D18DB /* Build configuration list for PBXNativeTarget "Carent - رزرو خودرو" */;
 			buildPhases = (
+				4D74FFB82491E0E057DFEE34 /* [CP] Check Pods Manifest.lock */,
 				D28D221E2029AD8C006D18DB /* Sources */,
 				D28D221F2029AD8C006D18DB /* Frameworks */,
 				D28D22202029AD8C006D18DB /* Resources */,
+				D21496C9C822F418C3315C41 /* [CP] Embed Pods Frameworks */,
+				19436FB989A5A84A1A8BA75B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +360,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D235C1702029B6D300A9CA73 /* IRANSansMobile_Medium.ttf in Resources */,
+				D235C16F2029B6D300A9CA73 /* IRANSansMobile_Bold.ttf in Resources */,
+				D2A409142029DAD300661263 /* DrawerVC.xib in Resources */,
 				D28D22302029AD8C006D18DB /* LaunchScreen.storyboard in Resources */,
+				D2697777202B479600A721CC /* ChooseDriver.xib in Resources */,
+				D2A409102029D56D00661263 /* CarsListVC.xib in Resources */,
+				D2A4091A2029DE3000661263 /* RegisterationVC.xib in Resources */,
+				D2697773202B3F3200A721CC /* RentCarVC.xib in Resources */,
+				D235C16E2029B6D300A9CA73 /* IRANSansMobile.ttf in Resources */,
+				D2A4090C2029D54B00661263 /* AdminPanelVC.xib in Resources */,
 				D28D222D2029AD8C006D18DB /* Assets.xcassets in Resources */,
-				D28D222B2029AD8C006D18DB /* Main.storyboard in Resources */,
+				D235C1712029B6D300A9CA73 /* IRANSansMobile_Light.ttf in Resources */,
+				D269776F202B390E00A721CC /* DrawerCell.xib in Resources */,
+				D2A4091E2029E5D800661263 /* RegisterEmail.xib in Resources */,
+				D269777F202B498700A721CC /* ChooseDriversCell.xib in Resources */,
+				D235C1682029B41800A9CA73 /* Page1VC.xib in Resources */,
+				D235C1722029B6D300A9CA73 /* IRANSansMobile_Black.ttf in Resources */,
+				D2A409262029F31100661263 /* CarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +397,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19436FB989A5A84A1A8BA75B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carent - رزرو خودرو/Pods-Carent - رزرو خودرو-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D74FFB82491E0E057DFEE34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carent - رزرو خودرو-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D21496C9C822F418C3315C41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Carent - رزرو خودرو/Pods-Carent - رزرو خودرو-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ACFloatingTextfield-Swift/ACFloatingTextfield_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACFloatingTextfield_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carent - رزرو خودرو/Pods-Carent - رزرو خودرو-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D28D221E2029AD8C006D18DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D269776E202B390E00A721CC /* DrawerCell.swift in Sources */,
+				D2A4091D2029E5D800661263 /* RegisterEmail.swift in Sources */,
+				D2A409252029F31100661263 /* CarCollectionViewCell.swift in Sources */,
+				D235C1672029B41800A9CA73 /* Page1VC.swift in Sources */,
+				D2A409192029DE3000661263 /* RegisterationVC.swift in Sources */,
+				D2A409132029DAD300661263 /* DrawerVC.swift in Sources */,
 				D28D22282029AD8C006D18DB /* ViewController.swift in Sources */,
+				D2697772202B3F3200A721CC /* RentCarVC.swift in Sources */,
+				D2A4090F2029D56D00661263 /* CarsListVC.swift in Sources */,
+				D2A409282029F35C00661263 /* Car.swift in Sources */,
+				D2697779202B493700A721CC /* Driver.swift in Sources */,
+				D2697776202B479600A721CC /* ChooseDriver.swift in Sources */,
+				D2A4092C2029F4DA00661263 /* Insurance.swift in Sources */,
 				D28D22262029AD8C006D18DB /* AppDelegate.swift in Sources */,
+				D2A4092A2029F49400661263 /* Info.swift in Sources */,
+				D2A409162029DB3300661263 /* Globals.swift in Sources */,
+				D269777E202B498700A721CC /* ChooseDriversCell.swift in Sources */,
+				D2A4090B2029D54B00661263 /* AdminPanelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +513,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D28D22292029AD8C006D18DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D28D222A2029AD8C006D18DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D28D222E2029AD8C006D18DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -424,13 +633,14 @@
 		};
 		D28D224B2029AD8D006D18DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0FA6C85DE314CF034C01DD /* Pods-Carent - رزرو خودرو.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 928ZGZ8C49;
 				INFOPLIST_FILE = "Carent - رزرو خودرو/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Danoosh-Chamani.Carent-------------";
+				PRODUCT_BUNDLE_IDENTIFIER = "Danoosh-Chamani.Carent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,13 +649,14 @@
 		};
 		D28D224C2029AD8D006D18DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626114309F9C2A2739DA43A7 /* Pods-Carent - رزرو خودرو.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 928ZGZ8C49;
 				INFOPLIST_FILE = "Carent - رزرو خودرو/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Danoosh-Chamani.Carent-------------";
+				PRODUCT_BUNDLE_IDENTIFIER = "Danoosh-Chamani.Carent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
