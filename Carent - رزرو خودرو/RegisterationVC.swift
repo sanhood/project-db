@@ -7,28 +7,18 @@
 //
 
 import UIKit
-
+import ACFloatingTextfield_Swift
 class RegisterationVC: UIViewController {
     var imagePicker = UIImagePickerController()
     @IBOutlet weak var profilePic:UIImageView!
-    @IBOutlet weak var collectionView:UICollectionView!
+    @IBOutlet weak var firstNameTxtField: ACFloatingTextfield!
+    @IBOutlet weak var lastNameTxtField: ACFloatingTextfield!
+    @IBOutlet weak var melliCodeTxtField: ACFloatingTextfield!
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
         let ges = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(ges)
-        let nib = UINib(nibName: "CarCollectionViewCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: "cell")
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 14, left: 10, bottom: 14, right: 10)
-        layout.itemSize = CGSize(width:100 , height: 100)
-        layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 13
-        collectionView!.collectionViewLayout = layout
-        collectionView.contentSize = CGSize(width: 600, height: 100)
-        collectionView.isPagingEnabled = true
-        collectionView.alwaysBounceVertical = false
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -47,9 +37,47 @@ class RegisterationVC: UIViewController {
         
     }
     
+    func checkFields() -> Bool {
+        if firstNameTxtField.text == "" {
+            firstNameTxtField.showErrorWithText(errorText: "لطفا این فیلد را پر کنید")
+            return false
+        }
+        if lastNameTxtField.text == "" {
+            lastNameTxtField.showErrorWithText(errorText: "لطفا این فیلد را پر کنید")
+            return false
+        }
+        if melliCodeTxtField.text == "" {
+            melliCodeTxtField.showErrorWithText(errorText: "لطفا این فیلد را پر کنید")
+           return false
+        }
+        return true
+    }
+    
+    func insetToDatabase() -> Bool{
+        let imageData = UIImageJPEGRepresentation(profilePic.image!, 1)
+        let encodedImg = imageData?.base64EncodedString()
+        let name = firstNameTxtField.text!+" "+lastNameTxtField.text!
+        let melliCode = melliCodeTxtField.text!
+        do {
+            try db!.run("INSERT INTO customer (name,image,melliCode,password,email) VALUES (?,?,?,?,?)",[name,encodedImg,melliCode,password,email])
+            return true
+        }catch{
+            print(error)
+            return false
+        }
+    }
+    
     @IBAction func registerPressed(_ sender: UIButton){
-        let vc = CarsListVC(nibName: "CarsListVC", bundle: nil)
-        navController.pushViewController(vc, animated: true)
+        if checkFields() {
+            if insetToDatabase() {
+                let vc = CarsListVC(nibName: "CarsListVC", bundle: nil)
+                navController.pushViewController(vc, animated: true)
+            }else{
+                let alert = UIAlertController(title: "خطا", message: "در ایجاد حساب کاربری مشکلی ایجاد شده است. دوباره تلاش کنید.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "باشه", style: .default, handler: nil))
+                present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func backPressed(_ sender: UIButton){

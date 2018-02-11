@@ -40,10 +40,41 @@ class RegisterEmail: UIViewController {
         passwordTxtField.lineColor = UIColor(red: 211, green: 211, blue: 211, alpha: 0.1)
 
     }
-    @IBAction func nextPressed(_ sender: UIButton){
-        let vc = RegisterationVC(nibName: "RegisterationVC", bundle: nil)
-        navController.pushViewController(vc, animated: true)
+    
+    func checkEmail() -> Bool{
+        email = emailTxtField.text!
+        var flag = true
+        if email.matches(for: "\\S+@\\S+\\.\\S+").count > 0 {
+            do{
+                let result = try db!.prepare("SELECT email FROM customer WHERE email = '\(email)'")
+                for _ in result {
+                    flag = false
+                }
+                if !flag {
+                    emailTxtField.showErrorWithText(errorText: "قبلا ثبت شده است")
+                }
+            }catch{
+                print(error)
+            }
+        }else{
+            flag = false
+            emailTxtField.showErrorWithText(errorText: "ایمیل معتبر نیست")
+        }
+        return flag
     }
+    
+    @IBAction func nextPressed(_ sender: UIButton){
+        if checkEmail() {
+            if passwordTxtField.text != "" {
+                password = passwordTxtField.text!
+                let vc = RegisterationVC(nibName: "RegisterationVC", bundle: nil)
+                navController.pushViewController(vc, animated: true)
+            }else{
+                passwordTxtField.showErrorWithText(errorText: "این فیلد را نیز پر کنید")
+            }
+        }
+    }
+    
     
     @IBAction func loginPressed(_ sender: UIButton){
         navController.popViewController(animated: true)

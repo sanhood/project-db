@@ -14,6 +14,17 @@ class Page1VC: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        do{
+            do{
+                try db!.run("DELETE FROM customer")
+            }catch{
+                print(error)
+            }
+            try db!.run("INSERT INTO customer (id,name,image,melliCode,password,email) VALUES (?,?,?,?,?,?)",[100,"dani","aksdnandjakndkjasndjkasndjkasd","0520239324","123","ghasem@s.c"])
+        }catch{
+            print(error)
+        }
+        
         let ges = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(ges)
         // Do any additional setup after loading the view.
@@ -43,8 +54,20 @@ class Page1VC: UIViewController {
         loginBtn.layer.borderWidth = 0.2
     }
     
-    func checkEntry(){
-        
+    func check() -> Bool{
+        email = emailTxtField.text!
+        password = passwordTxtField.text!
+        var flag = false
+        do{
+            let result = try db!.prepare("SELECT password FROM customer WHERE email = '\(email)' and password = '\(password)'")
+            for _ in result {
+                flag = true
+            }
+            print(flag)
+        }catch{
+            print(error)
+        }
+        return flag
     }
     
     @objc func dismissKeyboard(){
@@ -52,13 +75,20 @@ class Page1VC: UIViewController {
     }
     
     @IBAction func loginPressed(_ sender: UIButton){
-        let vc = CarsListVC(nibName: "CarsListVC", bundle: nil)
-        navController.pushViewController(vc, animated: true)
+        if check() {
+            let vc = CarsListVC(nibName: "CarsListVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        }else{
+            let alert = UIAlertController(title: "خطا", message: "ایمیل و یا پسورد شما اشتباه می‌باشد‌", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "باشه", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
     }
     @IBAction func signupPressed(_ sender: UIButton){
         let vc = RegisterEmail(nibName: "RegisterEmail", bundle: nil)
         navController.pushViewController(vc, animated: true)
     }
+    
 }
 extension Page1VC: UITextFieldDelegate {
     

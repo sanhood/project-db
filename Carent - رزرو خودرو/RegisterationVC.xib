@@ -20,6 +20,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterationVC" customModule="Carent___رزرو_خودرو" customModuleProvider="target">
             <connections>
+                <outlet property="firstNameTxtField" destination="mp2-Gb-ohI" id="bce-Ix-LE3"/>
+                <outlet property="lastNameTxtField" destination="hTP-M9-X8o" id="EcK-bL-9dD"/>
+                <outlet property="melliCodeTxtField" destination="25q-YC-qU2" id="Run-4F-T4U"/>
+                <outlet property="profilePic" destination="YDI-3j-XFY" id="Hnd-3a-RAy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -75,48 +79,6 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  نام" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mp2-Gb-ohI" customClass="ACFloatingTextfield" customModule="ACFloatingTextfield_Swift">
-                    <rect key="frame" x="70" y="264" width="235" height="45"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="235" id="NcI-b3-ans"/>
-                        <constraint firstAttribute="height" constant="45" id="jOo-Fr-9DZ"/>
-                    </constraints>
-                    <color key="textColor" white="0.9287109375" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="disableFloatingLabel" value="NO"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="shakeLineWithError" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  نام خانوادگی" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTP-M9-X8o" customClass="ACFloatingTextfield" customModule="ACFloatingTextfield_Swift">
-                    <rect key="frame" x="70" y="334" width="235" height="45"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="45" id="0FB-MU-yb6"/>
-                        <constraint firstAttribute="width" constant="235" id="kLh-JC-kOc"/>
-                    </constraints>
-                    <color key="textColor" white="0.9287109375" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="disableFloatingLabel" value="NO"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="shakeLineWithError" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  کد ملی" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25q-YC-qU2" customClass="ACFloatingTextfield" customModule="ACFloatingTextfield_Swift">
-                    <rect key="frame" x="70" y="404" width="235" height="45"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="235" id="3oA-Ol-ZbK"/>
-                        <constraint firstAttribute="height" constant="45" id="NFN-M1-jLL"/>
-                    </constraints>
-                    <color key="textColor" white="0.9287109375" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="disableFloatingLabel" value="NO"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="shakeLineWithError" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2Z-KP-4Kw">
                     <rect key="frame" x="70" y="604" width="235" height="43"/>
                     <color key="backgroundColor" red="0.9882352941176471" green="0.21568627450980393" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
@@ -149,20 +111,62 @@
                         <action selector="picPressed:" destination="-1" eventType="touchUpInside" id="FBF-rC-biD"/>
                     </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTP-M9-X8o" customClass="ACFloatingTextfield" customModule="ACFloatingTextfield_Swift">
+                    <rect key="frame" x="70" y="329" width="235" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="0FB-MU-yb6"/>
+                        <constraint firstAttribute="width" constant="235" id="kLh-JC-kOc"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="disableFloatingLabel" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shakeLineWithError" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="National Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25q-YC-qU2" customClass="ACFloatingTextfield" customModule="ACFloatingTextfield_Swift">
+                    <rect key="frame" x="70" y="399" width="235" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="235" id="3oA-Ol-ZbK"/>
+                        <constraint firstAttribute="height" constant="45" id="NFN-M1-jLL"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="disableFloatingLabel" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shakeLineWithError" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mp2-Gb-ohI" customClass="ACFloatingTextfield" customModule="ACFloatingTextfield_Swift">
+                    <rect key="frame" x="70" y="259" width="235" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="235" id="NcI-b3-ans"/>
+                        <constraint firstAttribute="height" constant="45" id="jOo-Fr-9DZ"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="disableFloatingLabel" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shakeLineWithError" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="GRw-4a-I45" firstAttribute="leading" secondItem="YDI-3j-XFY" secondAttribute="leading" id="24V-0E-OKc"/>
+                <constraint firstItem="YDI-3j-XFY" firstAttribute="top" secondItem="UcD-5e-FT8" secondAttribute="bottom" constant="36" id="9sm-rt-cw1"/>
                 <constraint firstItem="B2Z-KP-4Kw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dla-R6-zEB"/>
                 <constraint firstItem="25q-YC-qU2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fc8-EV-MxJ"/>
-                <constraint firstItem="B2Z-KP-4Kw" firstAttribute="top" secondItem="25q-YC-qU2" secondAttribute="bottom" constant="155" id="JNH-7t-rMI"/>
                 <constraint firstItem="25q-YC-qU2" firstAttribute="top" secondItem="hTP-M9-X8o" secondAttribute="bottom" constant="25" id="NsL-eR-3lk"/>
                 <constraint firstItem="hTP-M9-X8o" firstAttribute="top" secondItem="mp2-Gb-ohI" secondAttribute="bottom" constant="25" id="PGv-Ba-6yl"/>
                 <constraint firstItem="hTP-M9-X8o" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ref-8b-7pp"/>
+                <constraint firstItem="mp2-Gb-ohI" firstAttribute="top" secondItem="YDI-3j-XFY" secondAttribute="bottom" constant="30" id="Uet-gk-OGG"/>
                 <constraint firstItem="UcD-5e-FT8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Y3d-6N-J2L"/>
                 <constraint firstItem="GRw-4a-I45" firstAttribute="top" secondItem="YDI-3j-XFY" secondAttribute="top" id="YCE-37-tAH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="B2Z-KP-4Kw" secondAttribute="bottom" constant="20" id="YGk-2F-xpd"/>
-                <constraint firstItem="mp2-Gb-ohI" firstAttribute="top" secondItem="YDI-3j-XFY" secondAttribute="bottom" constant="35" id="bI0-9q-3Yy"/>
                 <constraint firstItem="UcD-5e-FT8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="boa-z1-Uvx"/>
                 <constraint firstItem="mp2-Gb-ohI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fs4-pT-W3B"/>
                 <constraint firstItem="UcD-5e-FT8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hto-f6-TLA"/>

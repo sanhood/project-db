@@ -33,10 +33,6 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="9Fa-7T-J4n">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pFb-OM-Ehw">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K6W-oG-bRf" customClass="ACFloatingTextfield" customModule="ACFloatingTextfield_Swift">
                     <rect key="frame" x="70" y="341" width="235" height="45"/>
                     <constraints>
@@ -111,24 +107,20 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="pFb-OM-Ehw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3Oy-Ec-EIj"/>
                 <constraint firstItem="EKR-Wn-nKr" firstAttribute="top" secondItem="K6W-oG-bRf" secondAttribute="bottom" constant="56" id="GDy-1y-paV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9Fa-7T-J4n" secondAttribute="bottom" id="IPg-Cr-TAT"/>
                 <constraint firstItem="zW5-d2-M6T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q2h-Ww-fOS"/>
                 <constraint firstItem="hGR-kp-fMl" firstAttribute="top" secondItem="EKR-Wn-nKr" secondAttribute="bottom" constant="8" id="Vzs-Zw-ku1"/>
                 <constraint firstItem="K6W-oG-bRf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cFu-aX-nFl"/>
-                <constraint firstItem="pFb-OM-Ehw" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="d46-mJ-Omo"/>
                 <constraint firstItem="K6W-oG-bRf" firstAttribute="top" secondItem="xRU-Me-xmo" secondAttribute="bottom" constant="18" id="dur-mA-cka"/>
                 <constraint firstItem="hGR-kp-fMl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g7l-Fj-hkp"/>
                 <constraint firstItem="K6W-oG-bRf" firstAttribute="top" secondItem="xRU-Me-xmo" secondAttribute="bottom" constant="18" id="hFs-3A-sB4"/>
-                <constraint firstItem="pFb-OM-Ehw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hyf-3a-YaZ"/>
                 <constraint firstItem="9Fa-7T-J4n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kbU-rk-NR7"/>
                 <constraint firstItem="xRU-Me-xmo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nFo-43-jLP"/>
                 <constraint firstItem="EKR-Wn-nKr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="o5t-ZU-u3s"/>
                 <constraint firstItem="9Fa-7T-J4n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="plF-o5-qty"/>
                 <constraint firstItem="9Fa-7T-J4n" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qbJ-NX-W5k"/>
                 <constraint firstItem="xRU-Me-xmo" firstAttribute="top" secondItem="zW5-d2-M6T" secondAttribute="bottom" constant="8" id="saO-Vg-4cq"/>
-                <constraint firstItem="pFb-OM-Ehw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="w81-Vn-uAp"/>
                 <constraint firstItem="zW5-d2-M6T" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="175" id="ydu-13-HTt"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

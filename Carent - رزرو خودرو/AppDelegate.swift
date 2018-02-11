@@ -21,12 +21,70 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 UserDefaults.standard.setValue(false, forKey: "first")
             }
         }else{
-            let path = NSSearchPathForDirectoriesInDomains(
-                .documentDirectory, .userDomainMask, true
-                ).first!
             do {
-                let _ = try Connection("\(path)/Carent.sqlite3")
-            }catch{print(error)}
+                try db!.execute("""
+                            BEGIN TRANSACTION;
+                            CREATE TABLE customer (
+                                id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                                email TEXT UNIQUE NOT NULL,
+                                password TEXT NOT NULL,
+                                name TEXT NOT NULL,
+                                melliCode TEXT NOT NULL,
+                                image TEXT
+                            );
+                            CREATE TABLE car (
+                                id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                                model TEXT NOT NULL,
+                                image TEXT,
+                                price INTEGER NOT NULL
+                            );
+                            CREATE TABLE technical_info (
+                                car_id INTEGER PRIMARY KEY NOT NULL,
+                                description TEXT,
+                                FOREIGN KEY (car_id) REFERENCES car(id)
+                            );
+                            CREATE TABLE insurance (
+                                code INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                                car_id INTEGER NOT NULL,
+                                name TEXT,
+                                start DATETIME,
+                                end DATETIME,
+                                FOREIGN KEY (car_id) REFERENCES car(id)
+                            );
+                            CREATE TABLE driver (
+                                id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                                name TEXT NOT NULL,
+                                birthDate DATETIME NOT NULL,
+                                gender TEXT NOT NULL
+                            );
+                            CREATE TABLE rent (
+                                customer_id INTEGER NOT NULL,
+                                car_id INTEGER NOT NULL,
+                                reserve_date DATETIME NOT NULL,
+                                delivery_date DATETIME,
+                                delivery_status INTEGER,
+                                total_cost INTEGER,
+                                PRIMARY KEY (customer_id,car_id,reserve_date),
+                                FOREIGN KEY (car_id) REFERENCES car(id),
+                                FOREIGN KEY (customer_id) REFERENCES customer(id)
+                            );
+                            CREATE TABLE request (
+                                customer_id INTEGER NOT NULL,
+                                car_id INTEGER NOT NULL,
+                                reserve_date DATETIME NOT NULL,
+                                driver_id INTEGER NOT NULL,
+                                numberOfDays INTEGER NOT NULL,
+                                PRIMARY KEY (customer_id,car_id,reserve_date,driver_id),
+                                FOREIGN KEY (car_id) REFERENCES car(id),
+                                FOREIGN KEY (customer_id) REFERENCES customer(id),
+                                FOREIGN KEY (reserve_date) REFERENCES rent(reserve_date),
+                                FOREIGN KEY (driver_id) REFERENCES driver(id)
+                            );
+                            COMMIT TRANSACTION;
+                            """)
+            }catch{
+                print(error)
+            }
         }
         let initialViewController = Page1VC(nibName: "Page1VC", bundle: nil)
         let rightVC = DrawerVC(nibName: "DrawerVC", bundle: nil)
